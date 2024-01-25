@@ -26,10 +26,23 @@ def print_student_name_and_id(about_me):
     
 # TODO: Step 5 - Function that adds pizza toppings to data structure
 def add_pizza_toppings(about_me, toppings):
+    current_toppings = {}
+    about_me["pizza_toppings"].lower().split(",")
+    new_toppings = toppings
+    current_toppings.extend(new_toppings)
+    about_me["pizza_toppings"] = ",".join(sorted(set(current_toppings)))
+
+
     return
 
 # TODO: Step 6 - Function that prints bullet list of pizza toppings
 def print_pizza_toppings(about_me):
+    about_me["pizza_toppings"].split(",")
+    print("My favorite pizza toppings are:")
+    print(f"-{toppings_list[0]}")
+    print(f"-{toppings_list[1]}")
+    print(f"-{toppings_list[2]}")
+
     return
 
 # TODO: Step 7 - Function that prints comma-separated list of movie genres
